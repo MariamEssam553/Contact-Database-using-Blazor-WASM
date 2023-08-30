@@ -11,6 +11,11 @@ builder.Services.AddEdgeDB(EdgeDBConnection.FromInstanceName("ContactsDB"), conf
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
+//builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+//{
+//    options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+//});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
